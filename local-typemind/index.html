@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local TypingMind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="api-key-section">
+      <input type="password" id="api-key" placeholder="Enter your API key">
+      <select id="api-provider">
+        <option value="deepseek">DeepSeek</option>
+        <option value="openai">OpenAI</option>
+      </select>
+      <button id="save-key">Save Key</button>
+    </div>
+    
+    <div class="chat-container">
+      <div class="history-container">
+        <h3>Activity History</h3>
+        <table id="activity-history">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be added dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <div class="main-container">
+        <div id="chat-window"></div>
+        <div class="input-area">
+          <textarea id="message-input" placeholder="Type your message..."></textarea>
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local TypingMind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="api-key-section">
+      <input type="password" id="api-key" placeholder="Enter your API key">
+      <select id="api-provider">
+        <option value="deepseek">DeepSeek</option>
+        <option value="openai">OpenAI</option>
+      </select>
+      <button id="save-key">Save Key</button>
+    </div>
+    
+    <div class="chat-container">
+    <div class="main-container">
+      <div id="chat-window"></div>
+      <div class="input-area">
+        <textarea id="message-input" placeholder="Type your message..."></textarea>
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+    <div class="history-container">
+      <h3>Activity History</h3>
+      <table id="activity-history">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Model</th>
+            <th>Tokens</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
